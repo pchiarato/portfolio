@@ -1,0 +1,368 @@
+$iphone: 375px
+$iphone-plus: 414px
+$ipad: 768px
+
+.home-container
+    margin: auto
+    //max-width: 1400px
+    width: 100vw
+    height: 100vh
+    //background-color: rgba(200,100,60,.3)
+    padding-top: 32vh
+    flex: 1
+    background-image: url('./../../assets/images/white-chair.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    z-index: -2
+    @media screen and (max-width: $iphone)
+        padding-top: 42vh
+
+    
+    .hero
+        border: 1px solid rgba(255,255,255,.2)
+        border-radius: 6px
+        background-color: rgba(255,255,255,.1)
+        text-align: center
+        //margin: 10vh auto
+        margin: auto
+        width: 50vw
+        height: 30vh
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        @media screen and (max-width: $iphone)
+            width: 100vw
+        @media screen and (max-width: $iphone-plus)
+            width: 100vw
+            margin-top: 20px
+        .title
+            display: flex
+            align-content: center
+            align-items: center
+            @media screen and (max-width: $iphone)
+                flex-direction: column
+
+            h1
+                color: rgba(255,255,255,1)
+                padding: 14px
+                //font-size: 50px
+                font-size: 2vw
+                flex: 1
+                white-space: nowrap
+                @media screen and (max-width: $iphone)
+                    font-size: 4vw
+            h2
+                color: rgba(0,0,0,1)
+                border-radius: 6px
+                background: rgba(255,255,255,.5)
+                padding: 14px
+                flex: 1
+                white-space: nowrap
+                font-size: 1.5vw
+                @media screen and (max-width: $iphone)
+                    font-size: 2.5vw
+        .paragraph
+            display: block
+            p
+                color: rgba(255,255,255,.5)
+                padding: 8px
+                font-size: 18px
+
+.about-container
+    background-color: orange
+    height: 100vh
+    margin: auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    .about-info
+        height: 70%
+        width: 100vw
+        background-color: #473B69
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .about-title
+            h1
+                color: white
+        .about-paragraph
+            margin: auto
+            width: 50%
+            text-align: center
+            p
+                color: white
+    .about-footer
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
+        background-color: #fff
+        width: 100vw
+        height: 30vh
+        color: rgba(0,0,0,.5)
+
+.skill-container
+    height: 70vh
+    width: 100vw
+    background-color: white
+
+    
+    .icons-container
+        margin: auto
+        width: 63vw
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        // background-color: pink
+        @media screen and (max-width: $iphone)
+            max-width: 100vw
+        @media screen and (max-width: $iphone-plus)
+            max-width: 100vw
+        .icon-labels
+            text-align: center
+            white-space: nowrap
+            font-size: 1.3em
+            padding: 4px 5px
+            @media screen and (max-width: $iphone)
+                padding: 2px 2px
+                font-size: .7em
+            @media screen and (max-width: $iphone-plus)
+                padding: 2px 2px
+                font-size: .7em
+        .skill-icons
+            padding: 20px 5px
+            text-align: center
+            @media screen and (max-width: $iphone)
+                padding: 20px 2px
+            @media screen and (max-width: $iphone-plus)
+                padding: 20px 2px
+            .icon
+                font-size: 4.6em
+                @media screen and (max-width: $iphone)
+                    font-size: 2.6em
+                @media screen and (max-width: $iphone-plus)
+                    font-size: 2.6em
+
+.portfolio-outer-container
+    width: 100vw
+    height: 100vh
+    background-color: #fff
+    padding-top: 10vh
+    @media screen and (max-width: $iphone)
+        padding-top: 8vh
+        height: 105vh
+    @media screen and (max-width: $iphone-plus)
+        padding-top: 8vh
+        height: 105vh
+    @media screen and (max-width: $ipad)
+        padding-top: 8vh
+        height: 100vh
+    .portfolio-inner-container
+        width: 80%
+        margin: auto
+        h1
+            text-align: center
+            color: rgba(0,0,0,.5)
+            @media screen and (max-width: $iphone)
+                display: none
+            @media screen and (max-width: $iphone-plus)
+                display: none
+            @media screen and (max-width: $ipad)
+                display: none
+
+        .portfolio-upper
+            display: flex
+            justify-content: center
+            @media screen and (max-width: $iphone)
+                flex-direction: column
+            @media screen and (max-width: $iphone-plus)
+                flex-direction: column
+            @media screen and (max-width: $ipad)
+                flex-direction: column
+            .portfolio-surfside
+                position: relative
+                max-width: 500px
+                max-height: 500px
+                flex: 1
+                margin: 20px
+                border: 1px solid rgba(0,0,0,.05)
+                @media screen and (max-width: $iphone)
+                    margin: 0px
+                @media screen and (max-width: $iphone-plus)
+                    margin: 0px
+                @media screen and (max-width: $ipad)
+                    margin: auto
+                    width: 70%
+                img
+                    width: 100%
+            .portfolio-employee-portal
+                position: relative
+                max-width: 500px
+                max-height: 500px
+                flex: 1
+                margin: 20px
+                border: 1px solid rgba(0,0,0,.05)
+                @media screen and (max-width: $iphone)
+                    margin: 0px
+                @media screen and (max-width: $iphone-plus)
+                    margin: 0px
+                @media screen and (max-width: $ipad)
+                    margin: auto
+                    width: 70%
+                img
+                    width: 100%
+
+        .portfolio-lower
+            display: flex
+            justify-content: center
+            @media screen and (max-width: $iphone)
+                flex-direction: column
+            @media screen and (max-width: $iphone-plus)
+                flex-direction: column
+            @media screen and (max-width: $ipad)
+                flex-direction: column
+            .portfolio-elsistema
+                position: relative
+                max-width: 500px
+                max-height: 500px
+                flex: 1
+                margin: 20px
+                border: 1px solid rgba(0,0,0,.05)
+                @media screen and (max-width: $iphone)
+                    margin: 0px
+                @media screen and (max-width: $iphone-plus)
+                    margin: 0px
+                @media screen and (max-width: $ipad)
+                    margin: auto
+                    width: 70%
+                img
+                    width: 100%
+            .portfolio-library-4-games
+                position: relative
+                max-width: 500px
+                max-height: 500px
+                flex: 1
+                margin: 20px
+                border: 1px solid rgba(0,0,0,.05)
+                @media screen and (max-width: $iphone)
+                    margin: 0px
+                @media screen and (max-width: $iphone-plus)
+                    margin: 0px
+                @media screen and (max-width: $ipad)
+                    margin: auto
+                    width: 70%
+                img
+                    width: 100%
+
+.overlay
+    z-index: 1
+    max-width: 500px
+    max-height: 500px
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: rgba(0,0,0,.7)
+    opacity: 0
+    transition: opacity .4s ease-in-out
+    &:hover
+        //transition: background 400ms ease-in-out
+        opacity: .7
+
+.portfolio-link
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    a
+        font-size: 32px
+        text-decoration: none
+        color: white
+        &:hover
+            color: yellow
+        
+.contact-container
+    height: 100vh
+    width: 100vw
+    background-color: #fff
+    .contact-inner-container
+        margin: auto
+        .top-contact-links
+            display: flex
+            justify-content: space-around
+            background-color: #473b69
+            padding: 120px
+            @media screen and (max-width: $iphone)
+                padding: 100px 20px 40px 20px
+            @media screen and (max-width: $iphone-plus)
+                padding: 100px 20px 40px 20px
+            a
+                color: rgba(255,255,255,.7)
+                text-decoration: none
+                &:hover
+                    color: #fff
+                .contact-icons
+                    text-align: center
+                    .fa
+                        font-size: 3.8em
+        
+.bottom-contact-links
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: auto
+    @media screen and (max-width: $iphone)
+        .bottom-contact-links
+            display: block
+    .contact-info
+        display: flex
+        flex-direction: column
+        text-align: center
+        padding: 20px
+        @media screen and (max-width: $iphone)
+            padding: 0px
+        h1
+            padding: 40px
+            color: #473b69
+            @media screen and (max-width: $iphone)
+                padding: 20px
+        h4
+            padding: 20px
+            color: #473b69
+        .bi-contact
+            display: flex
+            justify-content: space-around
+            align-items: center
+            @media screen and (max-width: $iphone)
+                flex-direction: column
+            .contact-text
+                font-size: 1em
+                color: #473b69
+            .fa-btm
+                display: flex
+                justify-content: space-around
+                align-items: center
+                font-size: 3.6em
+                padding: 16px
+                color: #473b69
+
+
+        
+                
+                
+
+
+
+
+  
+            
+                    
+        

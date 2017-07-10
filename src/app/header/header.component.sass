@@ -1,0 +1,76 @@
+$iphone: 375px
+$iphone-plus: 414px
+
+header
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    width: 100vw
+    height: 8vh
+    border-bottom: 1px solid rgba(255,255,255,.2)
+    box-shadow: 0px 0px 4px 2px rgba(255,255,255,.2)
+    margin: 0px auto 
+    background-color: black
+    trasition: all
+    z-index: 2
+    .nav-container
+        max-width: 1400px
+        margin: auto
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 4px
+        @media screen and (max-width: $iphone)
+            flex-direction: column
+            align-content: center
+        @media screen and (max-width: $iphone-plus)
+            flex-direction: column
+            align-content: center
+            ul li
+                display: block
+        .nav-link
+            font-size: 24px
+            display: inline-block
+            color: rgba(255,255,255,.6)
+            cursor: pointer
+            padding: 8px 12px
+            @media screen and (max-width: $iphone)
+                //background-color: rgba(0,0,0,.3)
+                color: rgba(255,255,255,1)
+                font-weight: bolder
+                text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+            @media screen and (max-width: $iphone-plus)
+                //background-color: rgba(0,0,0,.3)
+                color: rgba(255,255,255,1)
+                font-weight: bolder
+                text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;    
+            &:hover
+                color: rgba(255,255,255,1)
+        .nav-link:last-child
+                padding-right: 40px
+
+.scrolled
+    transition: background-color 300ms linear
+    background-color: white
+    color: black
+    box-shadow: 0px 0px 4px 2px rgba(0,0,0,.2) !important
+    border-bottom: 1px solid rgba(0,0,0,.2) !important
+    @media screen and (max-width: $iphone)
+        .nav-link
+            display: none !important
+        #home-btn
+            display: block !important
+            text-shadow: none
+    @media screen and (max-width: $iphone-plus)
+        .nav-link
+            display: none !important
+        #home-btn
+            display: block !important
+            text-shadow: none
+            
+
+.link-scrolled
+    color: rgba(0,0,0,.5) !important
+    &:hover
+        color: rgba(0,0,0,1) !important
