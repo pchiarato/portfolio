@@ -14,6 +14,26 @@ header
     background-color: black
     trasition: all
     z-index: 2
+    #home-btn
+        font-size: 24px
+        display: inline-block
+        color: rgba(255,255,255,.6)
+        cursor: pointer
+        padding: 8px 12px
+    #hamburger-menu
+        color: white
+        display: none
+        font-size: 1.6em
+        @media screen and(max-width: $iphone)
+            display: block
+            position: fixed
+            top: 16px
+            right: 16px
+        @media screen and(max-width: $iphone-plus)
+            display: block
+            position: fixed
+            top: 16px
+            right: 16px
     .nav-container
         max-width: 1400px
         margin: auto
@@ -29,22 +49,48 @@ header
             align-content: center
             ul li
                 display: block
+                padding-left: 60px
+        // .first-list
+        // background: pink
+        @media screen and(max-width: $iphone)
+            #home-btn
+                //position: fixed
+                color: white
+                font-size: 1.6em
+                top: 12px
+                right: 170px
+        @media screen and(max-width: $iphone-plus)
+            #home-btn
+                //position: fixed
+                color: white
+                font-size: 1.6em
+                top: 12px
+                right: 170px
+        .bottom-nav-links
+            @media screen and (max-width: $iphone)
+                padding-top: 10px
+                display: none
+            @media screen and (max-width: $iphone-plus)
+                padding-top: 10px
+                display: none
         .nav-link
             font-size: 24px
             display: inline-block
             color: rgba(255,255,255,.6)
             cursor: pointer
-            padding: 8px 12px
+            padding: 0px 12px 18px 12px
             @media screen and (max-width: $iphone)
                 //background-color: rgba(0,0,0,.3)
                 color: rgba(255,255,255,1)
                 font-weight: bolder
                 text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+                //opacity: 0
             @media screen and (max-width: $iphone-plus)
                 //background-color: rgba(0,0,0,.3)
                 color: rgba(255,255,255,1)
                 font-weight: bolder
-                text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;    
+                text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+                //opacity: 0
             &:hover
                 color: rgba(255,255,255,1)
         .nav-link:last-child
@@ -56,21 +102,33 @@ header
     color: black
     box-shadow: 0px 0px 4px 2px rgba(0,0,0,.2) !important
     border-bottom: 1px solid rgba(0,0,0,.2) !important
+    #home-btn
+        color: rgba(0,0,0,.5) !important
     @media screen and (max-width: $iphone)
-        .nav-link
-            display: none !important
         #home-btn
+            color: rgba(0,0,0,.5) !important
             display: block !important
             text-shadow: none
+        #hamburger-menu
+            color: rgba(0,0,0,.5) !important
     @media screen and (max-width: $iphone-plus)
-        .nav-link
-            display: none !important
         #home-btn
+            color: rgba(0,0,0,.5) !important
             display: block !important
             text-shadow: none
+        #hamburger-menu
+            color: rgba(0,0,0,.5) !important
             
 
 .link-scrolled
     color: rgba(0,0,0,.5) !important
+    @media screen and (max-width: $iphone)
+        color: #fff !important
+    @media screen and (max-width: $iphone-plus)
+        color: #fff !important
     &:hover
         color: rgba(0,0,0,1) !important
+        @media screen and (max-width: $iphone)
+            color: #fff !important
+        @media screen and (max-width: $iphone-plus)
+            color: #fff !important

@@ -53,6 +53,10 @@ export class HeaderComponent implements OnInit {
             $('html, body').animate({
               scrollTop: $("#contact-page").offset().top}, 1600)
             })
+            $("#hamburger-menu").on('click',function(){
+              $(".bottom-nav-links").toggle('display')
+            })
+            
         
 
         
